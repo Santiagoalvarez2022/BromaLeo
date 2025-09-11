@@ -10,8 +10,8 @@ const WeddingDetail = ({ event, date, address, logo, link }) => {
         </div>
 
         {/* Content */}
-        <div className="flex flex-col space-y-1">
-          <h3 className="text-3xl text-blueP font-semibold uppercase">
+        <div className="flex flex-col ">
+          <h3 className="text-3xl text-blueP uppercase">
             {event}
           </h3>
           <p className="text-xs">{date}</p>

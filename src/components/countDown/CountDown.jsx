@@ -38,7 +38,7 @@ const CountDown = () => {
     };
 
     return (
-        <section className="countdownPage py-8">
+        <section className="countdownPage pt-8 pb-2">
             <div className="chorometer font-Inria font-light">
                 <div className='container-count'>
                     <p className="count">{formatNumber(timeLeft.days)}</p>

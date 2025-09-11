@@ -7,7 +7,7 @@
 
 /* Imagen de flores arriba */
 .flowers {
-  background-image: url('../../assets/flowers.png');
+  background-image: url('../../assets/flowers.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
@@ -15,7 +15,13 @@
   height: 180px; /* Ajustalo según tu imagen */
   margin: 0 auto;
 }
-
+.date{
+  background-image: url('../../assets/date.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 60px; /* Ajustalo según tu imagen */
+  width: 100px;
+}
 
 /* Contenido */
 .wedding-info {
