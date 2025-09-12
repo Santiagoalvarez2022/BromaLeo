@@ -5,12 +5,12 @@ import Label from './components/label/Label';
 import flowersDetail from './assets/FlowersDetailWedding.svg'
 import flowersCornerUp from './assets/flowersCornerUp.svg'
 import flowersCornerDown from './assets/flowersCornerDown.svg'
-
+import video from './assets/video.mp4'
 import './App.css';
 
 const App = () => {
   return (
-    <div className='mb-40 flex flex-col items-center'>
+    <div className='flex flex-col items-center'>
       <PrincipalPhoto />
       <InformationWedding />
       <CountDown />
@@ -45,32 +45,49 @@ const App = () => {
         </div>
       </div>
       <Banner />
-      
-      <div className="relative text-center my-14 px-4 ">
+      <div className="relative text-center my-14 px-2">
         {/* Flores arriba izquierda */}
         <img
           src={flowersCornerUp}
           alt=""
-          className="absolute top-0 left-0 w-40"
+          className="absolute top-0 left-0 w-40 pointer-events-none -z-10"
         />
         <img
           src={flowersCornerDown}
           alt=""
-          className="absolute bottom-0 right-0 w-40"
-        /> 
-        <div className='border w-100 flex justify-center'>
-          <div className='flex flex-col items-center justify-center w-80 my-18'>
-            <p className='font-Inria text-base text-center mx-4 text-[#003780]'> Nos encantaría contar con su presencia en este día tan especial. Por favor, confirmen su asistencia antes del 10 de Noviembre </p>
-            <Label text="CONFIRMAR ASISTENCIA" />
+          className="absolute bottom-0 right-0 w-40 pointer-events-none -z-10"
+        />
 
-            <p className='font-Inria text-base text-center mx-4 text-[#003780]'>Tu presencia es nuestro mayor regalo, pero si querés acompañarnos también con un detalle, aquí están nuestros datos.</p>
+        <div className="flex justify-center">
+          <div className="flex flex-col items-center justify-center w-90 my-18">
+            <p className="font-Inria text-base text-center mx-4  w-70 paragraph">
+              Nos encantaría contar con su presencia en este día tan especial. 
+              Por favor, confirmen su asistencia antes del 10 de Noviembre
+            </p>
+            <Label text="CONFIRMAR ASISTENCIA" />
+              <br />
+              <br />
+              <br />
+
+            <p className="font-Inria text-base text-center mx-4  paragraph">
+              Tu presencia es nuestro mayor regalo, pero si querés acompañarnos 
+              también con un detalle, aquí están nuestros datos.
+            </p>
 
             <Label text="ALIAS: RENATAYPABLO.BODA" />
             <br />
             <Label text="CBU: 4530000800015182024100" />
           </div>
         </div>
-      </div>
+        </div>
+        <div className='flex justify-center mb-12'>
+           <video controls loop>
+              <source
+                src={video}
+                type="video/mp4" />
+              Tu navegador no soporta la reproducción de video.
+          </video>
+        </div>
     </div>
   )
 }

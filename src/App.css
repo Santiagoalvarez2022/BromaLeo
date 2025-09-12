@@ -2,3 +2,9 @@
     font-size: 1.2em;
     font-weight: 400;
 }
+
+.paragraph{
+    font-size: .9em;
+    color: #003780;
+    padding-bottom: 1em;
+}
