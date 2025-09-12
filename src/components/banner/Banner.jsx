@@ -6,7 +6,7 @@ const Banner = () => {
       <img
         src={img}
         alt="Pareja en banco"
-        className="w-full max-w-3xl mx-auto rounded-lg shadow-md"
+        className="w-full max-w-3xl mx-auto rounded-lg "
       />
    </div>
   )
