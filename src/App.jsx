@@ -12,6 +12,7 @@ const App = () => {
   return (
     <div className='flex flex-col items-center'>
       <PrincipalPhoto />
+      <div className='shadow-white'/>
       <InformationWedding />
       <CountDown />
       <span className='font-Obaby msg  '>Te esperamos para celebrar juntos...</span>

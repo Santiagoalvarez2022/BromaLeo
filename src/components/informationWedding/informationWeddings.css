@@ -4,9 +4,8 @@
   position: relative;
   width: 100%;
 }
-
-/* Imagen de flores arriba */
 .flowers {
+  position: relative;
   background-image: url('../../assets/flowers.svg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -14,7 +13,24 @@
   width: 100%;
   height: 180px; /* Ajustalo según tu imagen */
   margin: 0 auto;
+  overflow: hidden; /* asegura que nada se escape */
 }
+
+.flowers::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* altura del fade */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.973) 0%,
+    transparent 100%
+  );
+  pointer-events: none; /* no molesta clicks */
+}
+
 .date{
   background-image: url('../../assets/date.svg');
   background-repeat: no-repeat;

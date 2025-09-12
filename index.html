@@ -12,11 +12,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Marcellus+SC&family=Oooh+Baby&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Nos vamos a casar!" />
+    <meta property="og:description" content="Milene y Joel" />
+  
+    <!-- Imagen que se mostrará en la vista previa -->
+    <meta property="og:image" content="/assets/CoupleLink.jpg" />
+  
+    <!-- URL de la página -->
+    <meta property="og:url" content="wedding-ullua.vercel.app" />
+  
+    <!-- Tipo de contenido (en este caso, página web) -->
+    <meta property="og:type" content="website" />
+    
+    <!-- Opcional: Otros metadatos de Open Graph -->
+    <meta property="og:locale" content="es_ES" /> <!-- Idioma -->
+    <meta property="og:site_name" content="Invitación " />
+   
+    <style>
+      body {
+        
+      }
+      /* Ocultar el mensaje por defecto */
+      /* Añadir estilos aquí si es necesario */
+      #only-mobile-message {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #4a4a4a;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 1.5em;
+        text-align: center;
+      }
 
-    <title>Renata & Poli</title>
+      body.not-mobile #only-mobile-message {
+        display: block;
+      }
+
+      body.not-mobile #root {
+        display: none;
+      }
+    </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent) || /iPhone/.test(userAgent) && !window.MSStream) {
+        document.body.classList.add('mobile');
+      } else {
+        document.body.classList.add('not-mobile');
+      }
+    });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const metaTag = document.createElement('meta');
+    metaTag.name = 'google';
+    metaTag.content = 'notranslate';
+    document.head.appendChild(metaTag);
+  });
+  </script>
   </head>
   <body>
+    <div   id="only-mobile-message">Esta pagina fue diseñada solo para telefonos celulares</div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-  </body>
+  </body>>
 </html>
