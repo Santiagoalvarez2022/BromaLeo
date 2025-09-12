@@ -1,4 +1,4 @@
-import coupleImg from "../../assets/coupleWebp.webP";
+import coupleImg from "../../assets/coupleWebp.webp";
 
 const PrincipalPhoto = () => {
   return (
