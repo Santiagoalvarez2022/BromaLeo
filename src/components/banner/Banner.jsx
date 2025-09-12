@@ -1,4 +1,4 @@
-import img from '../../assets/coupleBanner.svg'
+import img from '../../assets/banner.webp'
 
 const Banner = () => {
   return (
