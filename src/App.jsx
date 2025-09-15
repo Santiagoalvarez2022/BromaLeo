@@ -2,10 +2,14 @@ import { InformationWedding, PrincipalPhoto,CountDown } from './components';
 import WeddingDetail from './components/weddingDetail/WeddingDetail';
 import Banner from './components/banner/Banner';
 import Label from './components/label/Label';
+import FormGuest from './components/formGuest/FormGuest';
 import flowersDetail from './assets/FlowersDetailWedding.svg'
 import flowersCornerUp from './assets/flowersCornerUp.svg'
 import flowersCornerDown from './assets/flowersCornerDown.svg'
+import copaFiesta from './assets/copas.png'
+import rings from './assets/rings.png'
 import video from './assets/video.mp4'
+import temple from './assets/temple.png'
 import './App.css';
 
 const App = () => {
@@ -22,40 +26,47 @@ const App = () => {
           alt="flores"
           className="absolute bottom-0 right-0 w-25  pointer-events-none mr-2 mb-3"
         />
+
         <div className="relative z-10">
           <WeddingDetail
             event={"Civil"}
             date={"Viernes 28 de Noviembre - 11hs"}
             address={"Beruti 3325, CABA"}
-            link={"ss"}
+            link={"https://maps.app.goo.gl/RhYPcV6mKZykStrt8"}
+            logo={rings}
           />
 
           <WeddingDetail
             event={"Fiesta"}
             date={"Viernes 28 de Noviembre - 19:45hs"}
             address={"El concerro, entre El Palenque y Exaltacion de la Cruz, CABA"}
-            link={"ss"}
+            link={"https://maps.app.goo.gl/2nBuGpXNnerzN1t69"}
+            logo={copaFiesta}
+
           />
 
           <WeddingDetail
             event={"Templo"}
             date={"Sabado 29 de Noviembre - 15hs"}
             address={"Autopista Riccheri 4955, Ciudad Evita"}
-            link={"ss"}
+            link={"https://maps.app.goo.gl/rrmCoHoJWRzqEA9r5"}
+            logo={temple}
           />
         </div>
       </div>
+
       <Banner />
+
       <div className="relative text-center my-14 px-2">
         {/* Flores arriba izquierda */}
         <img
           src={flowersCornerUp}
-          alt=""
+          alt="flores"
           className="absolute top-0 left-0 w-40 pointer-events-none -z-10"
         />
         <img
           src={flowersCornerDown}
-          alt=""
+          alt="flores"
           className="absolute bottom-0 right-0 w-40 pointer-events-none -z-10"
         />
 
@@ -65,11 +76,8 @@ const App = () => {
               Nos encantaría contar con su presencia en este día tan especial. 
               Por favor, confirmen su asistencia antes del 10 de Noviembre
             </p>
-            <Label text="CONFIRMAR ASISTENCIA" />
-              <br />
-              <br />
-              <br />
-
+            <FormGuest />
+            <br />
             <p className="font-Inria text-base text-center mx-4  paragraph">
               Tu presencia es nuestro mayor regalo, pero si querés acompañarnos 
               también con un detalle, aquí están nuestros datos.
@@ -81,8 +89,9 @@ const App = () => {
           </div>
         </div>
         </div>
+        <br />
         <div className='flex justify-center mb-12'>
-           <video controls loop>
+           <video loop>
               <source
                 src={video}
                 type="video/mp4" />
