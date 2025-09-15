@@ -89,15 +89,14 @@ const App = () => {
           </div>
         </div>
         </div>
-        <br />
-        <div className='flex justify-center mb-12'>
+        {/* <div className='flex justify-center mb-12'>
            <video loop>
               <source
                 src={video}
                 type="video/mp4" />
               Tu navegador no soporta la reproducción de video.
           </video>
-        </div>
+        </div> */}
     </div>
   )
 }
