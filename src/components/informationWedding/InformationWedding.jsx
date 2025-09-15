@@ -2,15 +2,13 @@ import './informationWeddings.css';
 
 const InformationWedding = () => {
   return (
-    <div className="wedding-container">
+    <div className="wedding-container mt-12 ">
       {/* Flores arriba */}
-      <div className="flowers"></div>
 
       {/* Contenido */}
       <div className="wedding-info text-blueP">
-        <h1 className="namesTitle font-Marcellus">Renata & Pablo</h1>
+        <h1 className="namesTitle font-Marcellus">Te invito a mi cumpleaños</h1>
         <div className='flex justify-center items-center'>
-          <div className='date' />
         </div>
       </div>
     </div>

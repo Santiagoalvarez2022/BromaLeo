@@ -1,4 +1,4 @@
-import img from '../../assets/banner.webp'
+import img from '../../assets/fotoleo2.jpg'
 
 const Banner = () => {
   return (

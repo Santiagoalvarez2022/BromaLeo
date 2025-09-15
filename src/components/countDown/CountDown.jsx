@@ -3,7 +3,7 @@ import "./CountDown.css";
 
 const CountDown = () => {
     // La fecha objetivo para la cuenta regresiva
-    const targetDate = new Date('2025-11-28T11:00:00Z').getTime();
+    const targetDate = new Date('2025-09-27T11:00:00Z').getTime();
 
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0 });
 
